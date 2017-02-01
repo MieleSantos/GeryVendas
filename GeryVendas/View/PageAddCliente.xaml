@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.PageAddCliente">
+	<ContentPage.Content>
+		<ScrollView>
+			
+			<StackLayout x:Name="stalkCLiente" 
+				    	 BackgroundColor="White"
+					     Padding="20">
+					
+					<Entry  PlaceholderColor="#024d36" 
+							Placeholder = "Nome"
+							BackgroundColor="Transparent"						
+							Keyboard="Text"
+							x:Name="nome" />
+						
+					<Entry  PlaceholderColor="#024d36"
+							Placeholder = "Email"
+						    BackgroundColor="Transparent"						
+							Keyboard="Email"
+							x:Name="email" />
+						
+					<Entry  PlaceholderColor="#024d36"
+							Placeholder = "Telefone"
+						    BackgroundColor="Transparent"						
+							Keyboard="Telephone"
+							x:Name="telefone" />
+						
+					<Entry PlaceholderColor="#024d36"
+							Placeholder = "Rua"
+						    BackgroundColor="Transparent"						
+							Keyboard ="Default"
+							x:Name="rua" />
+						
+					<Entry PlaceholderColor="#024d36"
+						    Placeholder = "Numero"
+							BackgroundColor="Transparent"						
+							Keyboard="Numeric"
+							x:Name="numero" />
+						
+					<Entry  BackgroundColor="Transparent"						
+							PlaceholderColor="#024d36"
+							Placeholder = "Bairro"
+							Keyboard="Default"
+							x:Name="bairro"/>	
+						
+					<Entry  BackgroundColor="Transparent"						
+							PlaceholderColor="#024d36" 
+							Placeholder = "Cidade"
+							Keyboard="Default"
+							x:Name="cidade"/>
+				
+			<Picker TextColor="#024d36"
+					x:Name="pickerEstado"
+					Title="Estado">
+					
+					<Picker.Items>
+						<x:String>Selecione o estado</x:String>
+						<x:String>AL</x:String>	
+						<x:String>AP</x:String>	
+						<x:String>BA</x:String>	
+						<x:String>CE</x:String>	
+						<x:String>DF</x:String>	
+						<x:String>ES</x:String>	
+						<x:String>GO</x:String>	
+						<x:String>MA</x:String>	
+						<x:String>MT</x:String>	
+						<x:String>MS</x:String>	
+						<x:String>MG</x:String>	
+						<x:String>PA</x:String>	
+						<x:String>PB</x:String>	
+						<x:String>PR</x:String>	
+						<x:String>PE</x:String>	
+						<x:String>PI</x:String>	
+						<x:String>RJ</x:String>	
+						<x:String>RN</x:String>	
+						<x:String>RS</x:String>	
+						<x:String>RO</x:String>	
+						<x:String>SC</x:String>	
+						<x:String>SP</x:String>	
+						<x:String>SE</x:String>	
+						<x:String>TO</x:String>	
+					</Picker.Items>			
+			</Picker>
+				<StackLayout
+						HorizontalOptions="End">
+					
+					<StackLayout
+							Orientation="Horizontal">
+           			 
+           			 <Button BackgroundColor="#024d36"
+							 TextColor="White"
+							 x:Name="cancelar"
+							 Text="Cancelar"
+							 Clicked="Cancelar_Clicked"/>
+						
+					<Button BackgroundColor="#024d36"
+							TextColor="White" 
+							x:Name = "salvar"
+							Text="Salvar"
+							Clicked="Salvar_Clicked"/>	
+				</StackLayout>
+			</StackLayout>
+	</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

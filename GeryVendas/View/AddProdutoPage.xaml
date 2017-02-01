@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.AddProdutoPage">
+	<ContentPage.Content>
+		<ScrollView>
+			
+		<StackLayout Padding="20" x:Name="pRo" >		
+			<StackLayout Orientation="Vertical">
+			<Entry  Placeholder = "Codigo"
+					BackgroundColor="Transparent"						
+					PlaceholderColor="#024d36"
+					Keyboard="Numeric"
+					x:Name="codigo"/>	
+			
+			<Entry  Placeholder = "Nome"
+					Keyboard="Text"
+					BackgroundColor="Transparent"						
+					PlaceholderColor="#024d36"
+					x:Name="nome"/>		
+				
+			<Entry  Placeholder = "Descricao"
+					Keyboard="Default"
+					BackgroundColor="Transparent"						
+				    PlaceholderColor="#024d36"
+					x:Name="descricao"/>	
+
+			<Entry  Placeholder = "Quantidade"
+					Keyboard="Numeric"
+					BackgroundColor="Transparent"						
+				    PlaceholderColor="#024d36"
+					x:Name="quantidadeP"/>
+			
+			<Entry Placeholder = "Preco"
+				Keyboard="Default"
+				BackgroundColor="Transparent"						
+				PlaceholderColor="#024d36"
+				x:Name="preco"/>
+
+			
+			<Grid>
+		         <Grid.RowDefinitions>
+			       <RowDefinition Height="*" />
+			       <RowDefinition Height="60" />
+		         </Grid.RowDefinitions>
+	       	     <Image x:Name="Photo"/>
+		         <Button x:Name="TakePhotoButton"
+							Grid.Row="1"
+							BackgroundColor="#024d36"
+							TextColor="White"
+							Text="Tira foto"/>
+	         </Grid>
+					
+			</StackLayout>	
+				<StackLayout HorizontalOptions="End">
+					
+					<StackLayout Orientation="Horizontal">
+           			 
+           			 <Button  x:Name="cancelar"
+							  BackgroundColor="#024d36"
+							  TextColor="White"							
+							  Text="Cancelar"					
+							  Clicked="CancelarPro_Clicked"/>
+						
+					<Button  x:Name="salvar"
+							 BackgroundColor="#024d36"
+							 TextColor="White"						
+							 Text="Salvar"
+							 Clicked="SalvarPro_Clicked"/>	
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+    </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.ListaPessoaPage">
+	<ContentPage.Content>
+		<StackLayout>
+					<ListView x:Name="listaEs"  ItemsSource="{Binding PessoaLista}">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<TextCell TextColor="#024d36" DetailColor="Black" Text="{Binding _nome}" Detail ="{Binding _email}" >
+									<TextCell.ContextActions>
+										<MenuItem/>
+								        <!--ItemTapped="List_Item" -->
+										<MenuItem  Text="Mais informacoes" Clicked="infoClicked" CommandParameter="{Binding .}"></MenuItem>
+										<MenuItem  Text="Editar" Clicked="editarClicked" CommandParameter="{Binding .}"></MenuItem>
+										<MenuItem Text="Excluir" IsDestructive="true" Clicked="excluirClicked" CommandParameter="{Binding .}"></MenuItem>
+
+									</TextCell.ContextActions>
+								</TextCell>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+				</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

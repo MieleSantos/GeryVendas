@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.Vendas">
+	<ContentPage.Content>
+		<ScrollView>
+		         <StackLayout Padding="20">	 
+				
+	         	    <StackLayout Orientation="Horizontal">
+				        <Label FontSize="16"  Text="Produto: " HorizontalOptions="End"  TextColor="#024d36"/>
+					    <Label FontSize="16" x:Name="nomeProdutoV"  TextColor="#024d36"/>
+				    </StackLayout>
+
+					<StackLayout Orientation="Horizontal">
+						<Label FontSize="16"  TextColor="#024d36"  HorizontalOptions="End" Text="Quantidade disponovel: "/>	
+					   	<Label x:Name="atuProduto" FontSize="16"  TextColor="#024d36"  ></Label>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<Label FontSize="16"  TextColor="#024d36"  HorizontalOptions="End" Text="Preco unitario: "/>	
+					   	<Label FontSize="16"  x:Name="precoUni"  TextColor="#024d36" />
+						 <Label FontSize="16" TextColor="#024d36"  Text="Reais"/>
+					</StackLayout>
+
+				    <Label x:Name="idPo" IsVisible="false"></Label>
+					
+			
+					<StackLayout Orientation="Horizontal">
+						 <Label FontSize="16" HorizontalOptions="End" Text="Data da Venda: " TextColor="#024d36"/>
+				         <DatePicker  DateSelected="DatePicker_OnDateSelected" IsEnabled="false" x:Name="dataVenda"  TextColor="#024d36"/>
+				   </StackLayout>
+				
+				
+				   <!-- <Label  FontSize="16" x:Name="dataVenda"  TextColor="#024d36"/>-->
+
+					<Label FontSize="16"  Text="Selecione o Cliente" TextColor="#024d36"/>
+					<Picker x:Name="seletcCliente" BackgroundColor="White"  TextColor="#024d36"/>
+
+					<Label FontSize="16"  Text="Quantidade"  TextColor="#024d36"/>
+					<Entry x:Name="entryquant" Keyboard="Numeric" TextColor="#024d36" BackgroundColor="White"/>
+
+
+					<Label FontSize="16"  TextColor="#024d36"  Text="Numero de parcelas"/>	
+					<Entry x:Name="numParcelas" Keyboard="Numeric" TextColor="#024d36" BackgroundColor="White"/>
+				<!--
+					<Label TextColor="#024d36"  Text="Numero de parcelas"/>	
+					<Entry x:Name="numParcelas" Keyboard="Numeric" TextColor="#024d36" BackgroundColor="White"/>
+
+					<Label TextColor="#024d36"  Text="Data do Pagamanto"/>			
+				    <DatePicker BackgroundColor="White"  DateSelected="dataParcela_OnDateSelected"  x:Name="dataParcela" TextColor="#024d36" />
+
+				    <Label TextColor="#024d36"  Text="SubTotal da venda"/>			
+					<Entry x:Name="subtotal" Keyboard="Numeric" TextColor="#024d36" BackgroundColor="White"/>
+				
+					<Label TextColor="#024d36"  Text="Total da venda"/>			
+					<Entry x:Name="total" Keyboard="Numeric" TextColor="#024d36" BackgroundColor="White"/>-->
+
+			<StackLayout
+						HorizontalOptions="End">			
+					<StackLayout
+							Orientation="Horizontal">        			 
+           			 <Button BackgroundColor="#024d36"						
+							 TextColor="White"
+							 Clicked="Cancelar_Clicked"
+							 x:Name="cancelar"
+							 Text="Cancelar" />						
+					<Button BackgroundColor="#024d36"						
+							TextColor="White"
+							Clicked="VendasItem_Clicked"
+							Text="Avançar"/>	
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>		
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

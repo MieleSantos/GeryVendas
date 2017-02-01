@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="GeryVendas.PagamentoPage">
+	<ContentPage.Content>
+		<ScrollView>
+		         <StackLayout Padding="20">	        			
+					 <Label  x:Name="atPru" IsVisible="false"/>		
+					<Label  x:Name="atId" IsVisible="false"/>	
+					<Label  FontSize="16" TextColor="Black"  Text="Selecione a data do Pagamanto"/>			
+				    <DatePicker BackgroundColor="White"  DateSelected="dataParcela_OnDateSelected" x:Name="dataParcela" TextColor="#024d36" />
+				   
+					<StackLayout Orientation="Horizontal">
+					     <Label  FontSize="16" TextColor="Black" HorizontalOptions="End" Text="Cliente: "/>			
+						 <Label   FontSize="16" x:Name="exiClie"  TextColor="#024d36" />
+					</StackLayout>
+				
+					<StackLayout Orientation="Horizontal">
+					     <Label FontSize="16" TextColor="Black" HorizontalOptions="End" Text="Produto: "/>			
+						 <Label FontSize="16" x:Name="exiPro"  TextColor="#024d36" />
+					</StackLayout>
+				
+					<StackLayout Orientation="Horizontal">
+					     <Label FontSize="16" TextColor="Black" HorizontalOptions="End" Text="Data da venda: "/>			
+						 <Label FontSize="16" x:Name="lblDataVenda"  TextColor="#024d36" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+					     <Label FontSize="16" TextColor="Black" HorizontalOptions="End" Text="Quantidade comprada: "/>			
+						 <Label FontSize="16" x:Name="lblquant"  TextColor="#024d36" />
+					</StackLayout>
+				
+					<StackLayout Orientation="Horizontal">
+				      <Label  FontSize="16" TextColor="Black"  HorizontalOptions="End" Text="Numero de parcelas: "/>	
+					  <Label  FontSize="16" TextColor="#024d36" x:Name="labelNumPar"  />
+					  <Label  FontSize="16" TextColor="#024d36"  Text=" x "/>	
+					  <Label  FontSize="16" TextColor="#024d36" x:Name="precopar" />	
+					   <Label FontSize="16" TextColor="#024d36"  Text="Reais"/>
+					</StackLayout>
+				
+				<!--	<StackLayout Orientation="Horizontal">
+					     <Label  FontSize="16" TextColor="Black" HorizontalOptions="End" Text="SubTotal:"/>			
+						 <Label  FontSize="16" x:Name="subtotal"  TextColor="#024d36" />
+					</StackLayout>
+				-->
+					<StackLayout Orientation="Horizontal">
+						<Label FontSize="16" TextColor="Black" HorizontalOptions="End" Text="Total: "/>			
+						<Label FontSize="16"  x:Name="total"  TextColor="#024d36" />
+						 <Label FontSize="16" TextColor="#024d36"  Text="Reais"/>
+					</StackLayout>
+			<StackLayout
+						HorizontalOptions="End">			
+					<StackLayout
+							Orientation="Horizontal">        			 
+           			 <Button BackgroundColor="#024d36"						
+							 TextColor="White"
+							 Clicked="Cancelar_Clicked"
+							 x:Name="cancelar"
+							 Text="Cancelar" />						
+					<Button BackgroundColor="#024d36"						
+							TextColor="White"
+							x:Name = "salvar"
+							Clicked="salvar_Clicked"
+							Text="Salvar"/>	
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>		
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

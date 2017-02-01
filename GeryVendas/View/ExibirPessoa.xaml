@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.ExibirPessoa">
+	<ContentPage.Content>
+		<StackLayout  >
+					<ListView  HasUnevenRows="true" ItemTapped="List_ItemP"  ItemsSource="{Binding ProdutoLista}">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<ViewCell >
+									<StackLayout>
+											<StackLayout Orientation="Horizontal">
+											   <Label FontSize="16" TextColor="Black"  Text="Nome: " HorizontalOptions="End"/>
+											   <Label FontSize="16" TextColor="#024d36" HorizontalOptions="Fill" Text="{Binding _nomeProduto}"/>
+											</StackLayout>
+								
+											<StackLayout Orientation="Horizontal">
+												<Label FontSize="16" TextColor="Black"  HorizontalOptions="Start" Text="Descricao: "/> 
+											    <Label FontSize="16" TextColor="#024d36" HorizontalOptions="Fill" Text="{Binding _descricao}"/>
+											</StackLayout>
+									
+											<StackLayout Orientation="Horizontal">
+												<Label FontSize="16" TextColor="Black" HorizontalOptions="Start" Text="Quantidade: "/>
+											    <Label  FontSize="16" TextColor="#024d36" HorizontalOptions="Fill" Text="{Binding  _quantidade}"/>
+												<Label FontSize="16" TextColor="Black"   Text="    Preco: "/>
+											    <Label FontSize="16" TextColor="#024d36"  Text="{Binding _preco}"/>
+												 <Label FontSize="16" TextColor="#024d36"  Text="Reais"/>
+											</StackLayout>
+									</StackLayout>
+								</ViewCell>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+				</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

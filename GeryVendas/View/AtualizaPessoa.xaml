@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.AtualizaPessoa">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="20">
+					
+					<Entry  TextColor="#024d36" 
+							BackgroundColor="Transparent"						
+							Keyboard="Text"
+							x:Name="nomeAtt" />
+				
+		
+					<Entry  TextColor="#024d36"
+						    BackgroundColor="Transparent"						
+							Keyboard="Email"
+							x:Name="emailAtt" />
+				
+		
+					<Entry  TextColor="#024d36"
+						    BackgroundColor="Transparent"
+							Keyboard="Telephone"
+							x:Name="telefoneAtt" />
+				
+	
+					<Entry  BackgroundColor="Transparent"
+						    TextColor="#024d36"
+							Keyboard ="Default"
+							x:Name="ruaAtt" />
+			
+					<Entry 	BackgroundColor="Transparent"
+							TextColor="#024d36"
+							Keyboard="Numeric"
+							x:Name="numeroAtt" />
+				
+					
+					<Entry  BackgroundColor="Transparent"								
+							TextColor="#024d36"
+							Keyboard="Default" 
+							x:Name="bairroAtt"/>	
+				
+
+					<Entry  BackgroundColor="Transparent"						
+					        TextColor="#024d36"
+						    Keyboard="Default"
+							x:Name="cidadeAtt"/>
+				
+
+			<Picker TextColor="#024d36"						
+					x:Name="pickerEstadoAtt"
+					Title="Estado">
+					<Picker.Items>	
+						<x:String>AL</x:String>	
+						<x:String>AP</x:String>	
+						<x:String>BA</x:String>	
+						<x:String>CE</x:String>	
+						<x:String>DF</x:String>	
+						<x:String>ES</x:String>	
+						<x:String>GO</x:String>	
+						<x:String>MA</x:String>	
+						<x:String>MT</x:String>	
+						<x:String>MS</x:String>	
+						<x:String>MG</x:String>	
+						<x:String>PA</x:String>	
+						<x:String>PB</x:String>	
+						<x:String>PR</x:String>	
+						<x:String>PE</x:String>	
+						<x:String>PI</x:String>	
+						<x:String>RJ</x:String>	
+						<x:String>RN</x:String>	
+						<x:String>RS</x:String>	
+						<x:String>RO</x:String>	
+						<x:String>SC</x:String>	
+						<x:String>SP</x:String>	
+						<x:String>SE</x:String>	
+						<x:String>TO</x:String>	
+					</Picker.Items>			
+			</Picker>
+				<StackLayout
+						HorizontalOptions="End">
+					
+					<StackLayout
+							Orientation="Horizontal">
+           			 
+           			 <Button BackgroundColor="#024d36"
+							 TextColor="White"
+							 x:Name="cancelar"
+							 Text="Cancelar"
+							 Clicked="Cancelar_Clicked"/>
+						
+					<Button BackgroundColor="#024d36"
+							TextColor="White" 
+							x:Name = "atualizarPessoa"
+							Text="Salvar"
+							Clicked="Atualizar_Clicked"/>	
+				</StackLayout>
+			</StackLayout>
+	</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

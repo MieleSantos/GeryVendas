@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{C405804C-9443-43B1-A12C-19D84D57DDBB}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\miele\OneDrive\Documentos\Projects\GeryVendas\GeryVendas\FullCameraPagePage.xaml.cs" line="10" column="1" />
+      <Breakpoint file="C:\Users\miele\OneDrive\Documentos\Projects\GeryVendas\GeryVendas\FullCameraPagePage.xaml.cs" line="12" column="1" />
+      <Breakpoint file="C:\Users\miele\OneDrive\Documentos\Projects\GeryVendas\GeryVendas\FullCameraPagePage.xaml.cs" line="13" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\CameraPageRenderer.cs">
+    <Files>
+      <File FileName="Droid\CameraPageRenderer.cs" Line="37" Column="4" />
+      <File FileName="GeryVendas\CameraPage.cs" Line="6" Column="16" />
+      <File FileName="GeryVendas\View\AddProdutoPage.xaml" Line="48" Column="25" />
+      <File FileName="GeryVendas\View\AddProdutoPage.xaml.cs" Line="121" Column="62" />
+      <File FileName="GeryVendas\Model\DaoProduto.cs" Line="17" Column="4" />
+      <File FileName="GeryVendas\Model\Produto.cs" Line="103" Column="3" />
+      <File FileName="GeryVendas\Model\FotoPro.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GeryVendas" expanded="True" selected="True">
+            <Node name="GeryVendas.Droid" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GeryVendas.Droid PreferredExecutionTarget="Android.SelectDevice" />
+</Properties>

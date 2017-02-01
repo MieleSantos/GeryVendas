@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.AtualizaProduto">
+	<ContentPage.Content>
+		<ScrollView>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+					<RowDefinition></RowDefinition>
+				</Grid.RowDefinitions>
+			</Grid>
+		<StackLayout Padding="20">		
+				
+			<Label Text="Codigo" TextColor="#024d36" FontSize="18" FontAttributes="Bold"/>
+			<Entry 	BackgroundColor="Transparent"						
+					Keyboard="Numeric"
+					x:Name="codigoAtt"/>	
+				
+			<Label Text="Nome" TextColor="#024d36" FontSize="18" FontAttributes="Bold"/>
+			<Entry  Keyboard="Text"
+					BackgroundColor="Transparent"						
+					x:Name="nomePatt"/>		
+				
+			<Label Text="Descrição" TextColor="#024d36" FontSize="18" FontAttributes="Bold"/>
+			<Entry  Keyboard="Default"
+					BackgroundColor="Transparent"						
+					x:Name="descricaoAtt"/>	
+				
+			<Label Text="Quantidade" TextColor="#024d36" FontSize="18" FontAttributes="Bold"/>
+			<Entry  Keyboard="Numeric"
+					BackgroundColor="Transparent"						
+					x:Name="quantidadePAtt"/>
+				
+			<Label Text="Preco" TextColor="#024d36" FontSize="18" FontAttributes="Bold"/>
+			<Entry 	Keyboard="Default"
+					BackgroundColor="Transparent"						
+					x:Name="precoAtt"/>	
+				
+		<!--	<Button x:Name="tirafoto"
+					    Clicked="tiraFoto_Clicked"
+					    Text="Tira foto do produto"
+					    BackgroundColor="#024d36"
+					    TextColor="White"/>-->
+
+				<StackLayout
+						HorizontalOptions="End">
+					
+					<StackLayout
+							Orientation="Horizontal">
+           			 
+           			 <Button  x:Name="cancelar"
+							  BackgroundColor="#024d36"
+							  TextColor="White"
+							  Text="Cancelar"					
+						      Clicked="CancelarPro_Clicked"	/>
+						
+					<Button  x:Name = "salvar"
+							 BackgroundColor="#024d36"
+							 TextColor="White"						
+							 Text="Salvar"
+							 Clicked="AtualizarP_Clicked"/>	
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+    </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

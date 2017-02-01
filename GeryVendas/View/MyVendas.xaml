@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.MyVendas">
+	<ContentPage.Content>
+		<StackLayout x:Name="layoutVenda" Padding ="20" >
+				<Button
+					x:Name="verCLiente"
+				 	HorizontalOptions= "Center" 
+					BackgroundColor="#024d36"
+					WidthRequest="240"
+					HeightRequest="50"
+					Text="Novo Cliente" 
+					TextColor="White" 
+					Clicked="VerCliente_Clicked" />
+
+				<Button
+				    x:Name="verProdutos" 
+					BackgroundColor="#024d36"
+					HorizontalOptions="Center" 
+					WidthRequest="240"
+					HeightRequest="50"
+					Text="Novo Produto"
+					TextColor="White"
+
+					Clicked="VerProdutos_Clicked"/>
+			
+				<Button 
+					x:Name="AddVendas" 
+					BackgroundColor="#024d36"
+					HorizontalOptions="Center" 
+					WidthRequest="240"
+					HeightRequest="50"
+					Text="Nova Vendas" 
+					TextColor="White"
+					Clicked="AddVendas_Clicked"/>
+				    
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GeryVendas.ListaPagamentos">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+	
+			<ListView  HasUnevenRows="true"  ItemsSource="{Binding ProdutoVenda}">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<ViewCell >
+									<StackLayout>
+											<StackLayout Orientation="Horizontal">
+											   <Label FontSize="16" TextColor="Black"  HorizontalOptions="End" Text="Nome: "/> 
+											   <Label FontSize="16" TextColor="#024d36"  Text="{Binding nomeCliente}"/>
+											</StackLayout>
+								
+											<StackLayout Orientation="Horizontal">
+												 <Label FontSize="16" TextColor="Black"  Text="Data do pagamento: " />
+											     <Label FontSize="16" TextColor="#024d36" Text="{Binding dataPagamento}"/>
+											</StackLayout>
+				
+								
+											<StackLayout Orientation="Horizontal">
+										      <Label  FontSize="16" TextColor="Black"  HorizontalOptions="End" Text="Numero de parcelas: "/>	
+											  <Label  FontSize="16" TextColor="#024d36"  Text="{Binding numeroParcela}" />
+											  <Label  FontSize="16" TextColor="#024d36"  Text=" x "/>	
+											  <Label  FontSize="16" TextColor="#024d36" Text="{Binding totalVenda}" />	
+											</StackLayout>
+
+											<!--<StackLayout Orientation="Horizontal">
+											  <SwitchCell OnChanged="StPago_OnChanged" Text="Situacao do Pagamento "></SwitchCell>
+											  <Label Text="Situacao do pagamento" FontSize="16" TextColor="#024d36" HorizontalOptions="End"/>		 
+                                              <Label x:Name="lblpago"  FontSize="16" TextColor="#024d36"/>										 
+											</StackLayout>
+				-->
+									</StackLayout>
+								</ViewCell>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+				</StackLayout>
+</ContentPage.Content>
+</ContentPage>
