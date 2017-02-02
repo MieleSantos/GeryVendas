@@ -123,7 +123,6 @@
     <Compile Include="ViewModel\VendaListViewModel.cs" />
     <Compile Include="IConfig.cs" />
     <Compile Include="IndexPage.cs" />
-    <Compile Include="Model\FotoPro.cs" />
     <Compile Include="View\ExibirPessoa.xaml.cs">
       <DependentUpon>ExibirPessoa.xaml</DependentUpon>
     </Compile>
@@ -134,7 +133,6 @@
     <Compile Include="Model\DaoPagamento.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="CameraPage.cs" />
-    <Compile Include="Model\DaoImagem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib">

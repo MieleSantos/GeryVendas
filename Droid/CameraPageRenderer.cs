@@ -42,16 +42,16 @@ namespace GeryVendas.Droid
 
 			liveView = new TextureView(Context);
 
-			RelativeLayout.LayoutParams liveViewParams = new RelativeLayout.LayoutParams(
-				RelativeLayout.LayoutParams.MatchParent,
-				RelativeLayout.LayoutParams.MatchParent);
+			var liveViewParams = new RelativeLayout.LayoutParams(
+				LayoutParams.MatchParent,
+				LayoutParams.MatchParent);
 			liveView.LayoutParameters = liveViewParams;
 			mainLayout.AddView(liveView);
 
 			capturePhotoButton = new PaintCodeButton(Context);
-			RelativeLayout.LayoutParams captureButtonParams = new RelativeLayout.LayoutParams(
-				RelativeLayout.LayoutParams.WrapContent,
-				RelativeLayout.LayoutParams.WrapContent);
+			var captureButtonParams = new RelativeLayout.LayoutParams(
+				LayoutParams.WrapContent,
+				LayoutParams.WrapContent);
 			captureButtonParams.Height = 120;
 			captureButtonParams.Width = 120;
 			capturePhotoButton.LayoutParameters = captureButtonParams;
