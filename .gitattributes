@@ -1,3 +1,3 @@
 
-*.C sharp linguist-detectable=true
+*.csharp linguist-detectable=true
 Droid/* linguist-vendored
