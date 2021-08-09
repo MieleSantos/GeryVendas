@@ -1,5 +1,6 @@
 
-*.C# linguist-detectable=true
 Droid/* linguist-vendored
 GeryVendas/* linguist-vendored
 packages/* linguist-vendored
+
+*.c# linguist-detectable=true
