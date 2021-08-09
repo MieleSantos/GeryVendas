@@ -4,3 +4,5 @@ GeryVendas/* linguist-vendored
 packages/* linguist-vendored
 
 *.c# linguist-detectable=true
+*.sln linguist-vendored
+*.userprefs linguist-vendored
