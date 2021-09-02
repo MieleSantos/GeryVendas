@@ -1,5 +1,5 @@
 
 Droid/* linguist-vendored
-*.csharp linguist-detectable=true
+*.csharp linguist-detectable=false
 
 *.java linguist-language=csharp
