@@ -1,7 +1,7 @@
 
+*.csharp linguist-detectable=true
 GeryVendas/* linguist-vendored
 packages/* linguist-vendored
 Droid/* linguist-vendored
 
-*.csharp linguist-detectable=true
 
