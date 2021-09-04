@@ -1,3 +1,7 @@
 
+GeryVendas/* linguist-vendored
+packages/* linguist-vendored
+Droid/* linguist-vendored
+
 *.cs linguist-detectable=true
 
