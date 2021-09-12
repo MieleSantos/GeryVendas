@@ -1,5 +1,5 @@
-
-*.csharp linguist-detectable=true
 Droid/* linguist-vendored
 packages/* linguist-vendored
+
+*.csharp linguist-detectable=true
 
