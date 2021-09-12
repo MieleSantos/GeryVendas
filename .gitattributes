@@ -1,5 +1,6 @@
-*.csharp linguist-detectable=true
 *.java linguist-language=csharp
+*.csharp linguist-detectable=true
+
 Droid/* linguist-vendored
 GeryVendas/* linguist-vendored
 packages/* linguist-vendored
