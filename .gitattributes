@@ -1,4 +1,5 @@
 
 *.csharp linguist-detectable=true
-
+Droid/* linguist-vendored
+packages/* linguist-vendored
 
